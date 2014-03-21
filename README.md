@@ -110,6 +110,12 @@ initialized by User
 ## Class diagram
 ![Class diagram](class_diagram.png)
 
+## Sequence diagram
+![sq_createEvent](sq_createEvent.png, "title:Create Event")
+
+![sq_shareEvent](sq_shareEvent.png, "title:Share Event")
+
+
 ## Questions
 1. where should I put the function of notifying upcoming events?
 2. should the _shareEvent_ include EmailApp, or provide its own sharing function?
