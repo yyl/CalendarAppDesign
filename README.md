@@ -121,3 +121,7 @@ initialized by User
 ## Questions
 1. where should I put the function of notifying upcoming events?
 2. should the _shareEvent_ include EmailApp, or provide its own sharing function?
+
+## Notes
+- class diagram: UImanager, inputManager....how do you create the program?
+- class diagram and sequence diagram should be informed by each other.
