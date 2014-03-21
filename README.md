@@ -111,9 +111,11 @@ initialized by User
 ![Class diagram](class_diagram.png)
 
 ## Sequence diagram
-![sq_createEvent](sq_createEvent.png, "title:Create Event")
+#### Create Event
+![sq_createEvent](sq_createEvent.png "title:Create Event")
 
-![sq_shareEvent](sq_shareEvent.png, "title:Share Event")
+#### Share Event
+![sq_shareEvent](sq_shareEvent.png "title:Share Event")
 
 
 ## Questions
