@@ -30,7 +30,8 @@ mike:User
 - mike, who tries to land a job, receives a phone call from company x, saying that due to time conflicts, his interview with the company has been scheduled to another time, but the location is the same.
 - mike thanks for the update, and then decides to modify the event of this interview on his calendar app.
 - mike opens the app, selects the event, and modifies only the time and data, keeps other information unchanged, and then saves the event. The event has been updated.
-- - -
+
+***
 
 ## Use cases
 ![Use cases](use_cases.png)
@@ -39,45 +40,46 @@ mike:User
 #### Participating actors
 initialized by User
 #### Flow of events
--- _User_ requests to create a new event.
-	-- The app presents _User_ with a form. 
--- _User_ specifies a name, time and date, location, whether enable notification, and if do when to notify, for the event. Then _User_ saves the event.
-	-- The app notifies _User_ the event has been created.
-	-- If _User_ enables the notification function, when the time has come to the time _User_ setup as the notification time, the app notifies _User_ the event is coming up.
+- _User_ requests to create a new event.
+	- The app presents _User_ with a form. 
+- _User_ specifies a name, time and date, location, whether enable notification, and if do when to notify, for the event. Then _User_ saves the event.
+	- The app notifies _User_ the event has been created.
+	- If _User_ enables the notification function, when the time has come to the time _User_ setup as the notification time, the app notifies _User_ the event is coming up.
 #### Entry condition
 - _User_ must know necessary information of the event.
 #### Exit condition
 - A new event exists.
 - _User_ receives notification that the event has been created.
 - The event is available to be browsed.
-- - -
+
+***
 
 #### _editEvent_
 #### Participating actors
 initialized by User
 #### Flow of events
--- _User_ requests to edit an existing event.
-	-- The app presents _User_ with a form showing the information of the event. 
--- _User_ changes fields accordingly. Then _User_ saves the event.
-	-- The app notifies _User_ the event has been updated.
-	-- If _User_ enables the notification function, when the time has come to the time _User_ setup as the notification time, the app notifies _User_ the event is coming up.
+- _User_ requests to edit an existing event.
+	- The app presents _User_ with a form showing the information of the event. 
+- _User_ changes fields accordingly. Then _User_ saves the event.
+	- The app notifies _User_ the event has been updated.
+	- If _User_ enables the notification function, when the time has come to the time _User_ setup as the notification time, the app notifies _User_ the event is coming up.
 #### Entry condition
 - The event must exist.
 - _User_ must know necessary information of the event.
 #### Exit condition
 - The information of the event has been updated.
 - _User_ receives notification.
-- - -
+***
 
 #### _shareEvent_
 #### Participating actors
 initialized by User, communicates with EmailApp, Sharer
 #### Flow of events
--- _User_ requests to share an existing event.
-	-- The app calls _EmailApp_, and presents a new email with the content filling with information of the event.
--- _User_ types in _Sharer_'s email address and sends the email.
-	-- The app notifies _User_ the event has been shared.
--- _Sharer_ receives the email.
+- _User_ requests to share an existing event.
+	- The app calls _EmailApp_, and presents a new email with the content filling with information of the event.
+- _User_ types in _Sharer_'s email address and sends the email.
+	- The app notifies _User_ the event has been shared.
+- _Sharer_ receives the email.
 #### Entry condition
 - The event must exist.
 - _User_ must have a EmailApp on his/her device.
@@ -85,20 +87,21 @@ initialized by User, communicates with EmailApp, Sharer
 #### Exit condition
 - The information of the event has been shared to _Sharer_.
 - _User_ receives notification.
-- - -
+---
 
 #### _checkEvent_
 #### Participating actors
 initialized by User
 #### Flow of events
--- _User_ requests to check his/her events.
-	-- The app presents events as bullet lists for each day of the current month.
--- _User_ selects one event.
-	-- The app presents the information of the event including xxxx.
+- _User_ requests to check his/her events.
+	- The app presents events as bullet lists for each day of the current month.
+- _User_ selects one event.
+	- The app presents the information of the event including xxxx.
 #### Entry condition
 - The event must exist.
 #### Exit condition
 - _User_ knows his/her events now.
+
 - - -
 
 ## Questions
