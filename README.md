@@ -42,8 +42,11 @@ mike:User
 
 #### _createEvent_
 #### Participating actors
+
 initialized by User
+
 #### Flow of events
+
 - _User_ requests to create a new event.
 	- The app presents _User_ with a form. 
 - _User_ specifies a name, time and date, location, whether enable notification, and if do when to notify, for the event. Then _User_ saves the event.
@@ -94,10 +97,15 @@ initialized by User
 ## Class diagram
 ![Class diagram](class_diagram.png)
 
-## Sequence diagram
-![sq_createEvent](sq_createEvent.png, "title:Create Event")
+- Follow _MVC_ architecture style, because
+	- There exist multiple views (Year, Month, Week, Day) for one single type of object (Calendar event)
+	- The interaction of the object is fixed (create, edit, delete)
+- _View_ is an abstract interface, which requires subclass to do the implementation
 
-![sq_shareEvent](sq_shareEvent.png, "title:Share Event")
+## Sequence diagram (TODO:fix)
+![sq_createEvent](sq_createEvent.png)
+
+![sq_shareEvent](sq_shareEvent.png)
 
 
 ## Questions
