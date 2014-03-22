@@ -13,8 +13,11 @@ A design of calendar app on mobile phone.
 ## Scenarios
 #### _newMeetingAnnouncedByBoss_
 #### Participating actors: 
-mike:User, joe:Sharer
+
+mike:User
+
 #### Flow of events:
+
 - today when mike is at work, his boss, jack, announces a new meeting tomorrow 10 a.m.
 - to help himself remember the event, mike creates a new event with his calendar app. He inputs the date, time, location, when to notify and the name of the event, and then saves it.
 - the next day, at 9 a.m., mike's phone buzzes. When he pick up the phone, mike realizes the meeting is within one hour, so he starts preparing relevant materials.
